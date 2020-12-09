@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="erp_KaderGURModelStoreContainer" CdmEntityContainer="erp_KaderGUREntities">
+    <EntitySetMapping Name="Departman">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Departman">
+        <MappingFragment StoreEntitySet="Departman">
+          <ScalarProperty Name="DepartmanId" ColumnName="DepartmanId" />
+          <ScalarProperty Name="DepartmanAd" ColumnName="DepartmanAd" />
+          <ScalarProperty Name="KullaniciDepartmani" ColumnName="KullaniciDepartmani" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dilekce">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Dilekce">
+        <MappingFragment StoreEntitySet="Dilekce">
+          <ScalarProperty Name="DilekceId" ColumnName="DilekceId" />
+          <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+          <ScalarProperty Name="icerik" ColumnName="icerik" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Okundu" ColumnName="Okundu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Faturalar">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Faturalar">
+        <MappingFragment StoreEntitySet="Faturalar">
+          <ScalarProperty Name="FaturaId" ColumnName="FaturaId" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="UrunBirimFiyat" ColumnName="UrunBirimFiyat" />
+          <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+          <ScalarProperty Name="IsOrtaklariID" ColumnName="IsOrtaklariID" />
+          <ScalarProperty Name="ToplamFiyatKDV" ColumnName="ToplamFiyatKDV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IsOrtaklari">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.IsOrtaklari">
+        <MappingFragment StoreEntitySet="IsOrtaklari">
+          <ScalarProperty Name="IsOrtaklariId" ColumnName="IsOrtaklariId" />
+          <ScalarProperty Name="FirmaAd" ColumnName="FirmaAd" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+          <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+          <ScalarProperty Name="DepartmanID" ColumnName="DepartmanID" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personel">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TC" ColumnName="TC" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+          <ScalarProperty Name="iseGirisTarihi" ColumnName="iseGirisTarihi" />
+          <ScalarProperty Name="DepartmanID" ColumnName="DepartmanID" />
+          <ScalarProperty Name="Maas" ColumnName="Maas" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stok">
+      <EntityTypeMapping TypeName="erp_KaderGURModel.Stok">
+        <MappingFragment StoreEntitySet="Stok">
+          <ScalarProperty Name="StokId" ColumnName="StokId" />
+          <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="GelisTarih" ColumnName="GelisTarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="spIsOrtaklariSil" FunctionName="erp_KaderGURModel.Store.spIsOrtaklariSil" />
+    <FunctionImportMapping FunctionImportName="spPersonelSil" FunctionName="erp_KaderGURModel.Store.spPersonelSil" />
+  </EntityContainerMapping>
+</Mapping>

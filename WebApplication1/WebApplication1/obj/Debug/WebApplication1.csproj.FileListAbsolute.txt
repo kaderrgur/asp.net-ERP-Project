@@ -1,0 +1,261 @@
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\WebApplication1.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+c:\users\bigmonster\documents\visual studio 2015\Projects\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.xml
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+G:\Yeni klasör\WebApplication1\WebApplication1\bin\En\WebApplication1.resources.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\En\WebApplication1.resources.dll
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.resources
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.en.resources
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.resources
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.en.resources
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.Cache
+I:\Yeni klasör\WebApplication1\WebApplication1\bin\en\WebApplication1.resources.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\en\WebApplication1.resources.dll
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.resources
+I:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.en.resources
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.resources
+G:\Yeni klasör\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.en.resources
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.resources
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.resources
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.en.resources
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.en.resources
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Kader\Desktop\WebApplication1\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.resources
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.resources
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.en.resources
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.en.resources
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Kader\Desktop\WEB PROGRAMLAMA\Gelenler\WebApplication1\bsm-web-2019-kader110\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\EntityFramework.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\EntityFramework.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Webpages.Razor.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.resources
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.resources
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Language.Localization.en.resources
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.Resources.Resource.en.resources
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.GenerateResource.cache
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\en\WebApplication1.resources.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\Kader\Desktop\ASP.NET MVC ERP Projesi\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

@@ -1,0 +1,255 @@
+﻿
+@{
+    Layout = null;
+}
+@using WebApplication1.App_Class;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="~/img/favicon.png">
+
+    <title>Admin Paneli</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="~/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <link href="~/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" href="~/css/owl.carousel.css" type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="~/css/style.css" rel="stylesheet">
+    <link href="~/css/style-responsive.css" rel="stylesheet" />
+
+    <!--DateTimePicker-->
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-fileupload/bootstrap-fileupload.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-timepicker/compiled/timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-colorpicker/css/colorpicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/bootstrap-datetimepicker/css/datetimepicker.css" />
+    <link rel="stylesheet" type="text/css" href="~/assets/jquery-multi-select/css/multi-select.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+      <script src="~/js/html5shiv.js"></script>
+      <script src="~/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <section id="container">
+        <!--header start-->
+        <header class="header white-bg">
+            <div class="sidebar-toggle-box">
+                <div data-original-title="Toggle Navigation" data-placement="right" class="icon-reorder tooltips"></div>
+            </div>
+            <!--logo start-->
+            <a href="/admin/admin" class="logo">GUR<span>Mensucat</span></a>
+            <!--logo end-->
+            
+            <div class="top-nav ">
+                <!--search & user info start-->
+                <ul class="nav pull-right top-menu">
+                    <!-- user login dropdown start-->
+                    <li class="dropdown language">
+                        <form name="DilSec" method="post" action="/admin/DilSec" role="form">
+                            <button name="secilenDil" type="submit" value="tr" class="btn btn-shadow btn-default btn-sm">
+                                <img src="~/img/flags/tr.png">
+                                <span>Türkçe</span>
+                            </button>
+                            <button name="secilenDil" type="submit" value="en" class="btn btn-shadow btn-default btn-sm">
+                                <img src="~/img/flags/us.png">
+                                <span>English</span>
+                            </button>
+                        </form>
+                        @*@Html.ActionLink("Türkçe", "DilSec", "admin", new { secilenDil = "tr" }, new { @class = "btn btn-default" })
+                            @Html.ActionLink("English", "DilSec", "admin", new { secilenDil = "en" }, new { @class = "btn btn-default" })*@
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="~/#">
+                            <span class="username">@HttpContext.Current.User.Identity.Name</span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li><a href="/admin/profil"><i class=" icon-suitcase"></i>Profil</a></li>
+                            <li><a href="/admin/cikis"><i class="icon-key"></i>@WebApplication1.Language.Localization.Cikis</a></li>
+                        </ul>
+                    </li>
+                    <!-- user login dropdown end -->
+                </ul>
+                <!--search & user info end-->
+            </div>
+        </header>
+        <!--header end-->
+        <!--sidebar start-->
+        <aside>
+            <div id="sidebar" class="nav-collapse ">
+                <!-- sidebar menu start-->
+                <ul class="sidebar-menu" id="nav-accordion">
+                    <li>
+                        <a class="@Html.ActivePage("admin","admin")" href="/admin/admin">
+                            <i class="icon-th"></i>
+                            @*<span name="Anasayfa">Anasayfa</span>*@
+                            <span>@WebApplication1.Language.Localization.Anasayfa</span>
+                        </a>
+                    </li>
+                    @if (User.IsInRole("IT"))
+                    {
+                        <li class="sub-menu">
+                            <a href="javascript:;">
+                                <i class="icon-sitemap"></i>
+                                @*<span name="Kullanicilar">Kullanıcılar</span>*@
+                                <span>@WebApplication1.Language.Localization.Kullanicilar</span>
+                            </a>
+                            <ul class="sub">
+                                <li><a class="@Html.ActivePage("admin","kullanicilarIT")" href="/admin/kullanicilarIT">@WebApplication1.Language.Localization.KullanicilarIT</a> </li>
+                                <li><a class="@Html.ActivePage("admin","kullanicilarIK")" href="/admin/kullanicilarIK">@WebApplication1.Language.Localization.KullanicilarIK</a> </li>
+                                <li><a class="@Html.ActivePage("admin","kullanicilarSP")" href="/admin/kullanicilarSP">@WebApplication1.Language.Localization.KullanicilarSP</a> </li>
+                                <li><a class="@Html.ActivePage("admin","kullanicilarF")" href="/admin/kullanicilarF">@WebApplication1.Language.Localization.KullanicilarF</a> </li>
+                            </ul>
+                        </li>
+                    }
+                    @if (User.IsInRole("IT") || User.IsInRole("IK"))
+                    {
+                        <li>
+                            <a class="@Html.ActivePage("admin","personeller")" href="/admin/personeller">
+                                <i class="icon-group"></i>
+                                <span>@WebApplication1.Language.Localization.Personeller</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.IsInRole("IT") || User.IsInRole("F") || User.IsInRole("SP"))
+                    {
+                        <li>
+                            <a class="@Html.ActivePage("admin","faturalar")" href="/admin/faturalar">
+                                <i class="icon-archive"></i>
+                                <span>@WebApplication1.Language.Localization.Faturalar</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.IsInRole("IK") || User.IsInRole("IT"))
+                    {
+                        <li>
+                            <a class="@Html.ActivePage("admin","dilekceler")" href="/admin/dilekceler">
+                                <i class="icon-comments-alt"></i>
+                                <span>@WebApplication1.Language.Localization.Dilekceler</span>
+                                <span class="label label-danger pull-right mail-info">@ViewBag.OkunmamisDilekceSayisi</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.IsInRole("IT") || User.IsInRole("F") || User.IsInRole("SP"))
+                    {
+                        <li>
+                            <a class="@Html.ActivePage("admin","isortaklari")" href="/admin/isortaklari">
+                                <i class="icon-suitcase"></i>
+                                <span>@WebApplication1.Language.Localization.IsOrtaklari</span>
+                            </a>
+                        </li>
+                    }
+                    @if (User.IsInRole("IT"))
+                    {
+                        <li>
+                            <a class="@Html.ActivePage("admin","RolOnayla")" href="/admin/RolOnayla">
+                                <i class="icon-ok-sign"></i>
+                                <span>@WebApplication1.Language.Localization.OnayBekleyen</span>
+                                    <span class="label label-danger pull-right mail-info">@ViewBag.OnayBekleyenAdet</span>
+                            </a>
+                        </li>
+                    }
+                </ul>
+                <!-- sidebar menu end-->
+            </div>
+        </aside>
+        <!--sidebar end-->
+        <!--main content start-->
+        <section id="main-content">
+            <section class="wrapper">
+                @RenderBody()
+            </section>
+        </section>
+        <!--main content end-->
+        <!--footer start-->
+        <footer class="site-footer">
+            <div class="text-center">
+                @WebApplication1.Language.Localization.Footer
+            </div>
+        </footer>
+        <!--footer end-->
+    </section>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="~/js/jquery.js"></script>
+    <script src="~/js/jquery-1.8.3.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script class="include" type="text/javascript" src="~/js/jquery.dcjqaccordion.2.7.js"></script>
+    <script src="~/js/jquery.scrollTo.min.js"></script>
+    <script src="~/js/jquery.nicescroll.js" type="text/javascript"></script>
+    <script src="~/js/jquery.sparkline.js" type="text/javascript"></script>
+    <script src="~/assets/jquery-easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/jquery.customSelect.min.js"></script>
+    <script src="~/js/respond.min.js"></script>
+
+    <script class="include" type="text/javascript" src="~/js/jquery.dcjqaccordion.2.7.js"></script>
+
+    <!--common script for all pages-->
+    <script src="~/js/common-scripts.js"></script>
+
+    <!--script for this page-->
+    <script src="~/js/sparkline-chart.js"></script>
+    <script src="~/js/easy-pie-chart.js"></script>
+    <script src="~/js/count.js"></script>
+
+    <!--DateTimePicker-->
+    <script type="text/javascript" src="~/assets/fuelux/js/spinner.min.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-fileupload/bootstrap-fileupload.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-wysihtml5/wysihtml5-0.3.0.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-wysihtml5/bootstrap-wysihtml5.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/moment.min.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-colorpicker/js/bootstrap-colorpicker.js"></script>
+    <script type="text/javascript" src="~/assets/bootstrap-timepicker/js/bootstrap-timepicker.js"></script>
+    <script type="text/javascript" src="~/assets/jquery-multi-select/js/jquery.multi-select.js"></script>
+    <script type="text/javascript" src="~/assets/jquery-multi-select/js/jquery.quicksearch.js"></script>
+    <!--this page  script only-->
+    <script src="~/js/advanced-form-components.js"></script>
+
+
+    <script>
+
+        //owl carousel
+
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                navigation: true,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true,
+                autoPlay: true
+
+            });
+        });
+
+        //custom select box
+
+        $(function () {
+            $('select.styled').customSelect();
+        });
+
+    </script>
+
+</body>
+</html>
+

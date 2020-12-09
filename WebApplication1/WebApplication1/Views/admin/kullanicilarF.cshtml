@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "kullanicilarF";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+
+@model IEnumerable<WebApplication1.Kullanici>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <aside class="profile-nav col-lg-3">
+            <section class="panel">
+                <div class="user-heading round">
+                    <h1>@item.AdSoyad</h1>
+                    <p>@item.Email</p>
+                </div>
+            </section>
+        </aside>
+        <aside class="profile-info col-lg-9">
+            <section class="panel">
+                <div class="panel-body bio-graph-info">
+                    <h1>@WebApplication1.Language.Localization.KullanicilarBaslik</h1>
+                    <div class="row">
+                        <div class="bio-row">
+                            <p><span>TC </span>: @item.TC</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>@WebApplication1.Language.Localization.AdSoyad </span>: @item.AdSoyad</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>@WebApplication1.Language.Localization.DogumTarihi </span>: @item.DogumTarihi</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>@WebApplication1.Language.Localization.Departman </span>: @item.Departman.DepartmanAd</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>@WebApplication1.Language.Localization.Email </span>: @item.Email</p>
+                        </div>
+                        <div class="bio-row">
+                            <p><span>@WebApplication1.Language.Localization.Telefon </span>: @item.Gsm</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    }
+</div>
+
+
+

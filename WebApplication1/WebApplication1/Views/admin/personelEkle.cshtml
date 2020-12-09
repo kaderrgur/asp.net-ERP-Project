@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Yeni Personel";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <header class="panel-heading">
+                <h4>@WebApplication1.Language.Localization.PersonelEkle</h4>
+            </header>
+            <div class="panel-body"  >
+                <form role="form" class="form-horizontal tasi-form" action="/admin/personelEkle" method="post">
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.AdSoyad</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="f-name" class="form-control" name="AdSoyad">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">TC</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="l-name" class="form-control" name="TC">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" placeholder="" id="email2" class="form-control" name="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Telefon</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="f-name" class="form-control" name="Gsm">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.IseGirisTarihi</label>
+                        <div class="col-lg-10">
+                            <input class="form-control form-control-inline input-medium default-date-picker" size="16" type="text" name="iseGirisTarihi" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Maas</label>
+                        <div class="col-lg-10">
+                            <input type="text" placeholder="" id="f-name" class="form-control" name="Maas">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-2 control-label" for="inputSuccess">@WebApplication1.Language.Localization.Departman</label>
+                        <div class="col-lg-10">
+                            <select class="form-control m-bot15" name="DepartmanID">
+                                @*<option>Seçiniz</option>*@
+                                @foreach (var item in ViewBag.Departman)
+                                {
+                                    <option value="@item.DepartmanId"> @item.DepartmanAd</option>
+                                }
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-2 col-lg-10">
+                            <button class="btn btn-danger" type="submit">@WebApplication1.Language.Localization.Kaydet</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+</div>

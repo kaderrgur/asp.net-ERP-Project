@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "RolOnayla";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+
+@model IEnumerable<WebApplication1.Kullanici>
+
+<section class="panel">
+    <div class="panel-body">
+        <div class="adv-table editable-table ">
+            <header class="panel-heading">
+                <h4>@WebApplication1.Language.Localization.OnayBekleyen</h4>
+            </header>
+            <br />
+            <div class="space15"></div>
+            <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                <thead>
+                    <tr>
+                        <th>TC</th>
+                        <th>@WebApplication1.Language.Localization.AdSoyad</th>
+                        <th>@WebApplication1.Language.Localization.DogumTarihi</th>
+                        <th>@WebApplication1.Language.Localization.Email</th>
+                        <th>@WebApplication1.Language.Localization.Telefon</th>
+                        <th>@WebApplication1.Language.Localization.Departman</th>
+                        <th>@WebApplication1.Language.Localization.Onayla</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr class="">
+                            <td>@item.TC</td>
+                            <td>@item.AdSoyad</td>
+                            <td>@item.DogumTarihi</td>
+                            <td>@item.Email</td>
+                            <td>@item.Gsm</td>
+                            <td>@item.Departman.DepartmanAd</td>
+                            <td>
+                                <form name="RolOnayla" action="/admin/RolOnayla" role="form" method="post">
+                                    <button name="RolOnayla" value="@item.KullaniciId" type="submit" class="btn btn-success btn-xs"> <i class="icon-ok"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

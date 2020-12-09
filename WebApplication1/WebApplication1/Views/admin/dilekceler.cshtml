@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "dilekceler";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+@model IEnumerable<WebApplication1.Dilekce>
+
+<div class="row">
+    <div class="col-md-12">
+        <section class="panel tasks-widget">
+            <header class="panel-heading">
+                @*@WebApplication1.Language.Localization.Dilekceler*@
+            </header>
+            <div class="panel-body">
+                <div class="task-content">
+                    <ul class="task-list">
+                        <table class="table table-striped table-hover table-bordered" id="editable-sample">
+                            <thead>
+                                <tr>
+                                    <th>@WebApplication1.Language.Localization.Dilekceler</th>
+                                    <th>@WebApplication1.Language.Localization.Islemler</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @item.Baslik
+                                            @{
+                                                TimeSpan ts = DateTime.Now - Convert.ToDateTime(item.Tarih);
+                                                <span class="badge badge-sm label-success"> @ts.Days @WebApplication1.Language.Localization.GunOnce</span>
+                                            }
+                                        </td>
+                                        <td><button class="btn btn-danger btn-xs"><i class="icon-ok"></i></button></td>
+                                    </tr>
+                                }
+                            </tbody>
+
+                            @*<div class="task-title">
+                                    <a href="" class="task-title-sp">@item.Baslik </a>
+                                    @{
+                                        TimeSpan ts = DateTime.Now - Convert.ToDateTime(item.Tarih);
+                                        <span class="badge badge-sm label-success"> @ts.Days @WebApplication1.Language.Localization.GunOnce</span>
+                                    }
+                                    <div class="pull-right hidden-phone">
+                                        <form class="horizontal-menu">
+                                            <button class="btn btn-danger btn-xs"><i class="icon-ok"></i></button>
+                                        </form>
+                                        <button class="btn btn-primary btn-xs"><i class="icon-pencil"></i></button>
+                                        <button class="btn btn-danger btn-xs"><i class="icon-trash "></i></button>
+                                    </div>
+                                </div>*@
+                        </table>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

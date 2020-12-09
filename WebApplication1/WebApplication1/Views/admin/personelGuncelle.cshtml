@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "personelGuncelle";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+
+@model WebApplication1.Personel
+<form class="form-horizontal" role="form" action="/admin/personelGuncelleOnay" method="post">
+    <div class="form-group">
+        <label class="col-lg-2 control-label">ID</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="PersonelId" value="@Model.PersonelId" readonly>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">TC</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="TC" value="@Model.TC">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.AdSoyad</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="AdSoyad" value="@Model.AdSoyad">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Email</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="Email" value="@Model.Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Telefon</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="Gsm" value="@Model.Gsm">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.IseGirisTarihi</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="iseGirisTarihi" value="@Model.iseGirisTarihi">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Departman</label>
+        <div class="col-lg-6">
+            <select class="form-control m-bot15" name="DepartmanID">
+                @foreach (var item2 in ViewBag.Departman)
+                {
+
+                    if (item2.DepartmanId == Model.DepartmanID)
+                    {
+                        <option selected="selected" value="@item2.DepartmanId"> @item2.DepartmanAd</option>
+                    }
+                    else
+                    {
+                        <option value="@item2.DepartmanId"> @item2.DepartmanAd</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Maas</label>
+        <div class="col-lg-6">
+            <input type="text" class="form-control" name="Maas" value="@Model.Maas">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-lg-offset-2 col-lg-10">
+            <button type="submit" class="btn btn-success">@WebApplication1.Language.Localization.Kaydet</button>
+            <button type="button" class="btn btn-default">@WebApplication1.Language.Localization.Iptal</button>
+        </div>
+    </div>
+</form>

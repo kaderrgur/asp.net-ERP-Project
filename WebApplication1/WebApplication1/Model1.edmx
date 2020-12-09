@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="erp_KaderGURModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Departman">
+          <Key>
+            <PropertyRef Name="DepartmanId" />
+          </Key>
+          <Property Name="DepartmanId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DepartmanAd" Type="nvarchar" MaxLength="50" />
+          <Property Name="KullaniciDepartmani" Type="bit" />
+        </EntityType>
+        <EntityType Name="Dilekce">
+          <Key>
+            <PropertyRef Name="DilekceId" />
+          </Key>
+          <Property Name="DilekceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar" MaxLength="200" />
+          <Property Name="icerik" Type="nvarchar(max)" />
+          <Property Name="Tarih" Type="smalldatetime" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="150" />
+          <Property Name="Okundu" Type="bit" />
+        </EntityType>
+        <EntityType Name="Faturalar">
+          <Key>
+            <PropertyRef Name="FaturaId" />
+          </Key>
+          <Property Name="FaturaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UrunAd" Type="nvarchar" MaxLength="100" />
+          <Property Name="Miktar" Type="int" />
+          <Property Name="UrunBirimFiyat" Type="money" />
+          <Property Name="KullaniciID" Type="int" />
+          <Property Name="IsOrtaklariID" Type="int" />
+          <Property Name="ToplamFiyatKDV" Type="money" />
+        </EntityType>
+        <EntityType Name="IsOrtaklari">
+          <Key>
+            <PropertyRef Name="IsOrtaklariId" />
+          </Key>
+          <Property Name="IsOrtaklariId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirmaAd" Type="nvarchar" MaxLength="100" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="200" />
+          <Property Name="Gsm" Type="char" MaxLength="11" />
+          <Property Name="Email" Type="nvarchar" MaxLength="70" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="KullaniciId" />
+          </Key>
+          <Property Name="KullaniciId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TC" Type="char" MaxLength="11" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="150" />
+          <Property Name="DogumTarihi" Type="date" />
+          <Property Name="Email" Type="nvarchar" MaxLength="70" />
+          <Property Name="Gsm" Type="char" MaxLength="11" />
+          <Property Name="Cinsiyet" Type="bit" />
+          <Property Name="DepartmanID" Type="int" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="20" />
+          <Property Name="Role" Type="nvarchar" MaxLength="2" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="PersonelId" />
+          </Key>
+          <Property Name="PersonelId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="150" />
+          <Property Name="TC" Type="char" MaxLength="11" />
+          <Property Name="Email" Type="nvarchar" MaxLength="70" />
+          <Property Name="Gsm" Type="char" MaxLength="11" />
+          <Property Name="iseGirisTarihi" Type="smalldatetime" />
+          <Property Name="DepartmanID" Type="int" />
+          <Property Name="Maas" Type="money" />
+        </EntityType>
+        <EntityType Name="Stok">
+          <Key>
+            <PropertyRef Name="StokId" />
+          </Key>
+          <Property Name="StokId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UrunAd" Type="nvarchar" MaxLength="100" />
+          <Property Name="Miktar" Type="int" />
+          <Property Name="GelisTarih" Type="date" />
+        </EntityType>
+        <Association Name="FK_Faturalar_IsOrtaklari">
+          <End Role="IsOrtaklari" Type="Self.IsOrtaklari" Multiplicity="0..1" />
+          <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IsOrtaklari">
+              <PropertyRef Name="IsOrtaklariId" />
+            </Principal>
+            <Dependent Role="Faturalar">
+              <PropertyRef Name="IsOrtaklariID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faturalar_Kullanici">
+          <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+          <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanici">
+              <PropertyRef Name="KullaniciId" />
+            </Principal>
+            <Dependent Role="Faturalar">
+              <PropertyRef Name="KullaniciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Kullanici_Departman">
+          <End Role="Departman" Type="Self.Departman" Multiplicity="0..1" />
+          <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departman">
+              <PropertyRef Name="DepartmanId" />
+            </Principal>
+            <Dependent Role="Kullanici">
+              <PropertyRef Name="DepartmanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Departman">
+          <End Role="Departman" Type="Self.Departman" Multiplicity="0..1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departman">
+              <PropertyRef Name="DepartmanId" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="DepartmanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="spIsOrtaklariSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IsOrtaklariSil" Type="int" Mode="In" />
+        </Function>
+        <Function Name="spPersonelSil" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="int" Mode="In" />
+        </Function>
+        <EntityContainer Name="erp_KaderGURModelStoreContainer">
+          <EntitySet Name="Departman" EntityType="Self.Departman" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Dilekce" EntityType="Self.Dilekce" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Faturalar" EntityType="Self.Faturalar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IsOrtaklari" EntityType="Self.IsOrtaklari" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Stok" EntityType="Self.Stok" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Faturalar_IsOrtaklari" Association="Self.FK_Faturalar_IsOrtaklari">
+            <End Role="IsOrtaklari" EntitySet="IsOrtaklari" />
+            <End Role="Faturalar" EntitySet="Faturalar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faturalar_Kullanici" Association="Self.FK_Faturalar_Kullanici">
+            <End Role="Kullanici" EntitySet="Kullanici" />
+            <End Role="Faturalar" EntitySet="Faturalar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Kullanici_Departman" Association="Self.FK_Kullanici_Departman">
+            <End Role="Departman" EntitySet="Departman" />
+            <End Role="Kullanici" EntitySet="Kullanici" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Departman" Association="Self.FK_Personel_Departman">
+            <End Role="Departman" EntitySet="Departman" />
+            <End Role="Personel" EntitySet="Personel" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="erp_KaderGURModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Departman">
+          <Key>
+            <PropertyRef Name="DepartmanId" />
+          </Key>
+          <Property Name="DepartmanId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DepartmanAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KullaniciDepartmani" Type="Boolean" />
+          <NavigationProperty Name="Kullanici" Relationship="Self.FK_Kullanici_Departman" FromRole="Departman" ToRole="Kullanici" />
+          <NavigationProperty Name="Personel" Relationship="Self.FK_Personel_Departman" FromRole="Departman" ToRole="Personel" />
+        </EntityType>
+        <EntityType Name="Dilekce">
+          <Key>
+            <PropertyRef Name="DilekceId" />
+          </Key>
+          <Property Name="DilekceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="icerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+          <Property Name="AdSoyad" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Okundu" Type="Boolean" DefaultValue="false" />
+        </EntityType>
+        <EntityType Name="Faturalar">
+          <Key>
+            <PropertyRef Name="FaturaId" />
+          </Key>
+          <Property Name="FaturaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrunAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Miktar" Type="Int32" />
+          <Property Name="UrunBirimFiyat" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="KullaniciID" Type="Int32" />
+          <Property Name="IsOrtaklariID" Type="Int32" />
+          <Property Name="ToplamFiyatKDV" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="IsOrtaklari" Relationship="Self.FK_Faturalar_IsOrtaklari" FromRole="Faturalar" ToRole="IsOrtaklari" />
+          <NavigationProperty Name="Kullanici" Relationship="Self.FK_Faturalar_Kullanici" FromRole="Faturalar" ToRole="Kullanici" />
+        </EntityType>
+        <EntityType Name="IsOrtaklari">
+          <Key>
+            <PropertyRef Name="IsOrtaklariId" />
+          </Key>
+          <Property Name="IsOrtaklariId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirmaAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Adres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Gsm" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_IsOrtaklari" FromRole="IsOrtaklari" ToRole="Faturalar" />
+        </EntityType>
+        <EntityType Name="Kullanici">
+          <Key>
+            <PropertyRef Name="KullaniciId" />
+          </Key>
+          <Property Name="KullaniciId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="AdSoyad" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="DogumTarihi" Type="DateTime" Precision="0" />
+          <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="Gsm" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="Cinsiyet" Type="Boolean" />
+          <Property Name="DepartmanID" Type="Int32" />
+          <Property Name="Sifre" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Departman" Relationship="Self.FK_Kullanici_Departman" FromRole="Kullanici" ToRole="Departman" />
+          <NavigationProperty Name="Faturalar" Relationship="Self.FK_Faturalar_Kullanici" FromRole="Kullanici" ToRole="Faturalar" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="PersonelId" />
+          </Key>
+          <Property Name="PersonelId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="TC" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+          <Property Name="Gsm" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+          <Property Name="iseGirisTarihi" Type="DateTime" Precision="0" />
+          <Property Name="DepartmanID" Type="Int32" />
+          <Property Name="Maas" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Departman" Relationship="Self.FK_Personel_Departman" FromRole="Personel" ToRole="Departman" />
+        </EntityType>
+        <EntityType Name="Stok">
+          <Key>
+            <PropertyRef Name="StokId" />
+          </Key>
+          <Property Name="StokId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrunAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Miktar" Type="Int32" />
+          <Property Name="GelisTarih" Type="DateTime" Precision="0" />
+        </EntityType>
+        <Association Name="FK_Kullanici_Departman">
+          <End Role="Departman" Type="Self.Departman" Multiplicity="0..1" />
+          <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departman">
+              <PropertyRef Name="DepartmanId" />
+            </Principal>
+            <Dependent Role="Kullanici">
+              <PropertyRef Name="DepartmanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Personel_Departman">
+          <End Role="Departman" Type="Self.Departman" Multiplicity="0..1" />
+          <End Role="Personel" Type="Self.Personel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departman">
+              <PropertyRef Name="DepartmanId" />
+            </Principal>
+            <Dependent Role="Personel">
+              <PropertyRef Name="DepartmanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faturalar_IsOrtaklari">
+          <End Role="IsOrtaklari" Type="Self.IsOrtaklari" Multiplicity="0..1" />
+          <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IsOrtaklari">
+              <PropertyRef Name="IsOrtaklariId" />
+            </Principal>
+            <Dependent Role="Faturalar">
+              <PropertyRef Name="IsOrtaklariID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Faturalar_Kullanici">
+          <End Role="Kullanici" Type="Self.Kullanici" Multiplicity="0..1" />
+          <End Role="Faturalar" Type="Self.Faturalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kullanici">
+              <PropertyRef Name="KullaniciId" />
+            </Principal>
+            <Dependent Role="Faturalar">
+              <PropertyRef Name="KullaniciID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="erp_KaderGUREntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Departman" EntityType="Self.Departman" />
+          <EntitySet Name="Dilekce" EntityType="Self.Dilekce" />
+          <EntitySet Name="Faturalar" EntityType="Self.Faturalar" />
+          <EntitySet Name="IsOrtaklari" EntityType="Self.IsOrtaklari" />
+          <EntitySet Name="Kullanici" EntityType="Self.Kullanici" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" />
+          <EntitySet Name="Stok" EntityType="Self.Stok" />
+          <AssociationSet Name="FK_Kullanici_Departman" Association="Self.FK_Kullanici_Departman">
+            <End Role="Departman" EntitySet="Departman" />
+            <End Role="Kullanici" EntitySet="Kullanici" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Personel_Departman" Association="Self.FK_Personel_Departman">
+            <End Role="Departman" EntitySet="Departman" />
+            <End Role="Personel" EntitySet="Personel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faturalar_IsOrtaklari" Association="Self.FK_Faturalar_IsOrtaklari">
+            <End Role="IsOrtaklari" EntitySet="IsOrtaklari" />
+            <End Role="Faturalar" EntitySet="Faturalar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Faturalar_Kullanici" Association="Self.FK_Faturalar_Kullanici">
+            <End Role="Kullanici" EntitySet="Kullanici" />
+            <End Role="Faturalar" EntitySet="Faturalar" />
+          </AssociationSet>
+          <FunctionImport Name="spIsOrtaklariSil">
+            <Parameter Name="IsOrtaklariSil" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="spPersonelSil">
+            <Parameter Name="id" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="erp_KaderGURModelStoreContainer" CdmEntityContainer="erp_KaderGUREntities">
+          <EntitySetMapping Name="Departman">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Departman">
+              <MappingFragment StoreEntitySet="Departman">
+                <ScalarProperty Name="DepartmanId" ColumnName="DepartmanId" />
+                <ScalarProperty Name="DepartmanAd" ColumnName="DepartmanAd" />
+                <ScalarProperty Name="KullaniciDepartmani" ColumnName="KullaniciDepartmani" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dilekce">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Dilekce">
+              <MappingFragment StoreEntitySet="Dilekce">
+                <ScalarProperty Name="DilekceId" ColumnName="DilekceId" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="icerik" ColumnName="icerik" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="Okundu" ColumnName="Okundu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Faturalar">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Faturalar">
+              <MappingFragment StoreEntitySet="Faturalar">
+                <ScalarProperty Name="FaturaId" ColumnName="FaturaId" />
+                <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="UrunBirimFiyat" ColumnName="UrunBirimFiyat" />
+                <ScalarProperty Name="KullaniciID" ColumnName="KullaniciID" />
+                <ScalarProperty Name="IsOrtaklariID" ColumnName="IsOrtaklariID" />
+                <ScalarProperty Name="ToplamFiyatKDV" ColumnName="ToplamFiyatKDV" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IsOrtaklari">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.IsOrtaklari">
+              <MappingFragment StoreEntitySet="IsOrtaklari">
+                <ScalarProperty Name="IsOrtaklariId" ColumnName="IsOrtaklariId" />
+                <ScalarProperty Name="FirmaAd" ColumnName="FirmaAd" />
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kullanici">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Kullanici">
+              <MappingFragment StoreEntitySet="Kullanici">
+                <ScalarProperty Name="KullaniciId" ColumnName="KullaniciId" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+                <ScalarProperty Name="Cinsiyet" ColumnName="Cinsiyet" />
+                <ScalarProperty Name="DepartmanID" ColumnName="DepartmanID" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personel">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Personel">
+              <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="PersonelId" ColumnName="PersonelId" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="TC" ColumnName="TC" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Gsm" ColumnName="Gsm" />
+                <ScalarProperty Name="iseGirisTarihi" ColumnName="iseGirisTarihi" />
+                <ScalarProperty Name="DepartmanID" ColumnName="DepartmanID" />
+                <ScalarProperty Name="Maas" ColumnName="Maas" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Stok">
+            <EntityTypeMapping TypeName="erp_KaderGURModel.Stok">
+              <MappingFragment StoreEntitySet="Stok">
+                <ScalarProperty Name="StokId" ColumnName="StokId" />
+                <ScalarProperty Name="UrunAd" ColumnName="UrunAd" />
+                <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+                <ScalarProperty Name="GelisTarih" ColumnName="GelisTarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="spIsOrtaklariSil" FunctionName="erp_KaderGURModel.Store.spIsOrtaklariSil" />
+          <FunctionImportMapping FunctionImportName="spPersonelSil" FunctionName="erp_KaderGURModel.Store.spPersonelSil" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

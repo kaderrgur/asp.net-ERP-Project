@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a75859d007c84801b7f7ed9f23877e58" Name="Diagram1">
+        <EntityTypeShape EntityType="erp_KaderGURModel.Departman" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.Dilekce" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.Faturalar" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.IsOrtaklari" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.Kullanici" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.Personel" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="erp_KaderGURModel.Stok" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="erp_KaderGURModel.FK_Kullanici_Departman" ManuallyRouted="false" />
+        <AssociationConnector Association="erp_KaderGURModel.FK_Personel_Departman" ManuallyRouted="false" />
+        <AssociationConnector Association="erp_KaderGURModel.FK_Faturalar_IsOrtaklari" ManuallyRouted="false" />
+        <AssociationConnector Association="erp_KaderGURModel.FK_Faturalar_Kullanici" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

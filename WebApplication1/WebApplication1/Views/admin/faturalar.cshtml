@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "faturalar";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+@model IEnumerable<WebApplication1.Faturalar>
+<section class="panel">
+    <div class="panel-body">
+        <div class="adv-table editable-table ">
+            <br />
+            <div class="clearfix">
+                <div class="btn-group">
+                    <a href="/admin/faturaEkle" class="btn btn-success">
+                        Fatura Oluştur <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <br />
+            <div class="space15"></div>
+
+            <table class="table table-striped table-advance table-hover">
+                <thead>
+                    <tr>
+                        <th><i class="icon-key"</i></th>
+                        <th><i class="icon-user"</i> Firma Adı</th>
+                        <th><i class="icon-info"</i> Ad</th>
+                        <th><i class="icon-sort-by-attributes"</i> Adet</th>
+                        <th><i class="icon-dollar"</i> Birim Fiyat</th>
+                        <th><i class="icon-dollar"</i> Toplam Fiyat+KDV</th>
+                        <th><i class="icon-bullhorn"</i> Fatura Oluşturan</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            @*<td><a href="#">@item.FaturaId</a></td>*@
+                            <td>@item.FaturaId</td>
+                            <td>@item.IsOrtaklari.FirmaAd</td>
+                            <td>@item.UrunAd</td>
+                            <td>@item.Miktar</td>
+                            <td>@item.UrunBirimFiyat</td>
+                            <td>@item.ToplamFiyatKDV</td>
+                            <td>@item.Kullanici.AdSoyad</td>
+                            <td>
+                                <button class="btn btn-success btn-xs"><i class="icon-ok"></i></button>
+                                <button class="btn btn-primary btn-xs"><i class="icon-pencil"></i></button>
+                                <button class="btn btn-danger btn-xs"><i class="icon-trash "></i></button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+

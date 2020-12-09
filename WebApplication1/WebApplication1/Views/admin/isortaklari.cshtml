@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "isortaklari";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+@model IEnumerable<WebApplication1.IsOrtaklari>
+<section class="panel">
+    <div class="panel-body">
+        <div class="adv-table editable-table ">
+            <br />
+            <div class="clearfix">
+                <div class="btn-group">
+                    <a href="/admin/isOrtaklariEkle" class="btn btn-success">
+                        @WebApplication1.Language.Localization.YeniIsOrtagi <i class="icon-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <br />
+            <div class="space15"></div>
+
+            <table class="table table-striped table-advance table-hover">
+                <thead>
+                    <tr>
+                        <th><i class="icon-group "</i> @WebApplication1.Language.Localization.FirmaAd</th>
+                        <th><i class="icon-phone-sign"></i> @WebApplication1.Language.Localization.Telefon</th>
+                        <th><i class="icon-envelope"></i> @WebApplication1.Language.Localization.Email</th>
+                        <th><i class="icon-map-marker"></i> @WebApplication1.Language.Localization.Adres</th>
+                        <th><i class="icon-book"></i> @WebApplication1.Language.Localization.Fatura</th>
+                        <th><i class="icon-edit"></i> @WebApplication1.Language.Localization.Guncelle</th>
+                        <th><i class="icon-trash"></i> @WebApplication1.Language.Localization.Sil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.FirmaAd</td>
+                            <td>@item.Gsm</td>
+                            <td>@item.Email </td>
+                            <td>@item.Adres </td>
+                            <td>
+                                <form role="form" name="IsOrtaklariId" action="/admin/isortagiFatura/" method="post">
+                                    <button name="IsOrtaklariId" class="btn btn-success btn-xs" type="submit" value="@item.IsOrtaklariId"><i class="icon-list-ul"></i> </button>
+                                </form>
+                            </td>
+                            <td>
+                                <form role="form" name="IsOrtaklariGuncelle" action="/admin/IsOrtaklariGuncelle" method="post">
+                                    <button name="IsOrtaklariGuncelle" class="btn btn-primary btn-xs" type="submit" value="@item.IsOrtaklariId"><i class="icon-pencil"></i></button>
+                                </form>
+                            </td>
+                            <td>
+                                <form role="form" name="IsOrtaklariSil" action="/admin/IsOrtaklariSil" method="post">
+                                    <button name="IsOrtaklariSil" class="btn btn-danger btn-xs" type="submit" value="@item.IsOrtaklariId"><i class="icon-trash"></i> </button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

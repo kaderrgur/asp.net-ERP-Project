@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewBag.Title = "profilDuzenle";
+    Layout = "~/Views/admin/layout.cshtml";
+}
+
+@model WebApplication1.Kullanici
+<form class="form-horizontal" role="form" method="post" action="/admin/profilDuzenleOnay">
+    <div class="row">
+            <aside class="profile-nav col-lg-3">
+                <section class="panel">
+                    <div class="user-heading round">
+                        <a href="#">
+                            @*<img src="img/profile-avatar.jpg" alt="">*@
+                        </a>
+                        <h1>@Model.AdSoyad</h1>
+                        <p>@Model.Email</p>
+                    </div>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li>
+                            <form method="post" action="/admin/profil" role="form">
+                                <button type="submit" class="btn btn-default btn-large"> <i class="icon-edit"></i> @WebApplication1.Language.Localization.Profil</button>
+                            </form>
+                        </li>
+                    </ul>
+                </section>
+            </aside>
+            <aside class="profile-info col-lg-9">
+                <section class="panel">
+                    <div class="panel-body bio-graph-info">
+                        <h1>@WebApplication1.Language.Localization.Hakkında</h1>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">ID</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" readonly name="KullaniciId" value="@Model.KullaniciId">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">TC</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" readonly name="TC" value="@Model.TC">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.AdSoyad</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" name="AdSoyad" value="@Model.AdSoyad">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.DogumTarihi</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" name="DogumTarihi" value="@Model.DogumTarihi">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Departman</label>
+                            <div class="col-lg-6">
+                                <select class="form-control m-bot15" name="DepartmanID">
+                                    @foreach (var item2 in ViewBag.Departman)
+                                    {
+                                        <option selected="selected" value="@item2.DepartmanId"> @item2.DepartmanAd</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Email</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" name="Email" value="@Model.Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.Telefon</label>
+                            <div class="col-lg-6">
+                                <input type="text" class="form-control" name="Gsm" value="@Model.Gsm">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"> @WebApplication1.Language.Localization.Guvenlik</div>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.GuncelSifre</label>
+                                <div class="col-lg-6">
+                                    <input type="password" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.YeniSifre</label>
+                                <div class="col-lg-6">
+                                    <input type="password" class="form-control" name="Sifre" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-lg-2 control-label">@WebApplication1.Language.Localization.YeniSifreTekrar</label>
+                                <div class="col-lg-6">
+                                    <input type="password" class="form-control" value="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-lg-offset-2 col-lg-10">
+                                    <button type="submit" class="btn btn-info">@WebApplication1.Language.Localization.Kaydet</button>
+                                    <button type="button" class="btn btn-default">@WebApplication1.Language.Localization.Iptal</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </aside>
+    </div>
+</form>
